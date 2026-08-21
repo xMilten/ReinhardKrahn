@@ -1,0 +1,11 @@
+:root {
+    --color-primary: #222;
+    --color-secondary: #555;
+    --color-background: #fff;
+
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 32px;
+
+    --content-width: 1200px;
+}

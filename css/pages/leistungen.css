@@ -1,0 +1,293 @@
+/* ==============================
+   Einleitung
+   ============================== */
+
+.services-intro {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 80px 30px;
+
+    text-align: center;
+}
+
+.services-intro-content {
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+.services-intro h1 {
+    margin: 0 0 30px;
+
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.services-intro p {
+    margin: 0 0 20px;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+
+/* ==============================
+   Leistungsbereiche
+   ============================== */
+
+.service-detail {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+
+/* ==============================
+   Abwechselndes Layout
+   ============================== */
+
+.service-detail-reverse .service-detail-image {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.service-detail-reverse .service-detail-content {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+
+/* ==============================
+   Bild
+   ============================== */
+
+.service-detail-image {
+    overflow: hidden;
+
+    min-height: 450px;
+}
+
+.service-detail-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/* ==============================
+   Inhalt
+   ============================== */
+
+.service-detail-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 60px;
+}
+
+.service-detail-content h2 {
+    margin: 0 0 25px;
+
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.service-detail-content p {
+    margin: 0 0 20px;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+
+/* ==============================
+   Zwischenüberschrift
+   ============================== */
+
+.service-detail-content h3 {
+    margin: 20px 0 20px;
+
+    font-size: 21px;
+    font-weight: 600;
+}
+
+
+
+/* ==============================
+   Leistungsliste
+   ============================== */
+
+.service-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.service-list li {
+    position: relative;
+
+    margin-bottom: 14px;
+
+    padding-left: 28px;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.service-list li::before {
+    content: "✓";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    font-weight: 700;
+
+    color: #0c569f;
+}
+
+
+
+/* ==============================
+   Kontaktbereich
+   ============================== */
+
+.services-contact {
+    border-top: 1px solid #ddd;
+
+    padding: 80px 30px;
+
+    text-align: center;
+}
+
+.services-contact-content {
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+.services-contact h2 {
+    margin: 0 0 25px;
+
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.services-contact p {
+    margin: 0 0 20px;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.services-contact-button {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 14px 24px;
+}
+
+
+
+/* ==============================
+   Responsive
+   ============================== */
+
+@media (max-width: 900px) {
+
+    .service-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .service-detail-reverse .service-detail-image,
+    .service-detail-reverse .service-detail-content {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .service-detail-reverse .service-detail-image {
+        order: 0;
+    }
+
+    .service-detail-image {
+        min-height: 350px;
+    }
+
+    .service-detail-content {
+        padding: 40px;
+    }
+
+    .services-intro h1 {
+        font-size: 36px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .services-intro {
+        padding: 60px 25px;
+    }
+
+    .services-intro h1 {
+        font-size: 32px;
+    }
+
+    .services-intro p {
+        font-size: 17px;
+    }
+
+    .service-detail {
+        width: calc(100% - 40px);
+
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .service-detail-image {
+        min-height: 260px;
+    }
+
+    .service-detail-content {
+        padding: 30px;
+    }
+
+    .service-detail-content h2 {
+        font-size: 28px;
+    }
+
+    .service-detail-content p {
+        font-size: 16px;
+    }
+
+    .services-contact {
+        padding: 60px 25px;
+    }
+
+    .services-contact h2 {
+        font-size: 28px;
+    }
+
+    .services-contact p {
+        font-size: 17px;
+    }
+
+}

@@ -1,0 +1,152 @@
+/* ==============================
+   Grundlegende Einstellungen
+   ============================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.button {
+  background-color: #0c569f;
+  color: white;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  border: none;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.button:hover,
+.button.active:hover {
+  background-color: #b6daff;
+  color: black;
+}
+
+.button.active {
+  background-color: #6798c9;
+  color: white;
+}
+
+#kerntechnik {
+  scroll-margin-top: 90px;
+}
+
+/* ==============================
+   Header
+   ============================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  min-height: 90px;
+  width: 100%;
+
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* ==============================
+   Header Container
+   ============================== */
+
+.header-container {
+  max-width: 1200px;
+  min-height: 90px;
+
+  margin: 0 auto;
+  padding: 0 30px;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ==============================
+   Logo
+   ============================== */
+
+.logo {
+  justify-self: end;
+  margin-right: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  display: block;
+
+  height: 80px;
+  width: auto;
+}
+
+
+/* ==============================
+   Navigation
+   ============================== */
+
+.main-navigation {
+  grid-column: 2;
+}
+
+.main-navigation ul {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-navigation a {
+  width: 120px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+/* ==============================
+   Inhalt
+   ============================== */
+
+.content-section {
+    border-top: 1px solid #ddd;
+    padding: 80px 0;
+    max-width: 1200px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+}
+
+
+/* ==============================
+   Footer
+   ============================== */
+
+footer {
+  text-align: center;
+}
